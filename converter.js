@@ -1,3 +1,7 @@
+import { writeFileSync } from "node:fs";
+
+const data = [];
+
 const objectsToCsv = (data) => {
   const csvRows = [];
   // Encabezados
@@ -16,6 +20,6 @@ const objectsToCsv = (data) => {
   return csvRows.join("\n");
 };
 
-const csvData = objectsToCsv(pizzas);
+const csvData = objectsToCsv(data);
 
-console.log(csvData);
+writeFileSync("./data/data.csv", csvData);

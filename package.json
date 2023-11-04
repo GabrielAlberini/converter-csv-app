@@ -1,0 +1,13 @@
+{
+  "name": "converter-csv-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "converter.js",
+  "type": "module",
+  "scripts": {
+    "start": "node converter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
